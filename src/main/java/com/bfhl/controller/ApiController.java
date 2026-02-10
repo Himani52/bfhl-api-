@@ -30,7 +30,8 @@ public class ApiController {
             return new ApiResponse(true, EMAIL, service.lcm(req.getLcm()));
 
       if (req.getAi() != null) {
-    return new ApiResponse(true, EMAIL, "Mumbai");
+    return new ApiResponse(true, EMAIL,
+            service.askAI(req.getAi()));
 }
 
 
